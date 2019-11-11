@@ -1,5 +1,5 @@
 body {
-    background: #100EFF;
+    background: url("https://res.cloudinary.com/jokuriodev/image/upload/v1573494613/space_lodfvh.webp") 
 }
 #container {
     width: 50%;
@@ -8,7 +8,7 @@ body {
     box-shadow: 0 4px 8px 0;
     border-radius: 5px;
     text-align: center;  
-    background: #FAEBD7; 
+    background: #FFFAFA; 
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }

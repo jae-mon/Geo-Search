@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" media="screen and (max-width: 320px)" href="CSS/mobile.css" type="text/css">
     <meta name="viewport" content="width=device-width" />
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm9b1P-lydieXiRGuSWuFFlW-pWZfR9_g&callback=geoMap"
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm9b1P-lydieXiRGuSWuFFlW-pWZfR9_g&callback=geoMap&libraries=places"
     type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
 
@@ -22,7 +22,7 @@
       <div id="city-search">
           <form onsubmit="alert('Let\'s go there!');return false">
               Enter city name <br><input type="text" value=" "><br>
-              <input type="submit" value="Search">
+              <input type="submit" id="search" value="Search">
             </form>
 
       </div>

@@ -3,11 +3,15 @@
     padding: 0px;
 }
 
-@media only screen and (orientation:portrait){
-    body {
-      height: 100%;
-      width: 100%;
-      transform: rotate(90deg);
+@media only screen and (max-width:600px) and (orientation:portrait){
+    html {
+        transform: rotate(90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
   }
   

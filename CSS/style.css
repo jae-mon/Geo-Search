@@ -3,14 +3,17 @@
     padding: 0px;
 }
 
-@media only screen and (max-width:600px) and (orientation:portrait){
-    html {
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        height: 100vh;
-        width: 100vw;
-        overflow-x: hidden;
-        position: absolute;
+@media only screen and (orientation:portrait){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #container {
+        width: 100%;
+    }
+    #map-container {
+        width: 100%;
+        height: 50%;
     }
   }
   
@@ -20,8 +23,8 @@
     float: right;
     background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
     text-align: center;  
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-top: 0.75%;
+    padding-bottom: 0.75%;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -67,4 +70,12 @@ input {
     font-weight: 600;
     color: #0000FF; 
     background: #D3D3D3;
+}
+
+#data {
+    color: #000000;
+    float: left;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
 }

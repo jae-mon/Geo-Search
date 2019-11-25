@@ -5,9 +5,21 @@
 
 @media only screen and (orientation:portrait){
     body {
+<<<<<<< HEAD
       height: 100vh;
       width: 100vw;
       transform: rotate(90deg);
+=======
+        display: flex;
+        flex-direction: column;
+    }
+    #container {
+        width: 100%;
+    }
+    #map-container {
+        width: 100%;
+        height: 50%;
+>>>>>>> f38f3ef5bd4049709f74da5ceea453c935b94e53
     }
   }
   
@@ -64,4 +76,12 @@ input {
     font-weight: 600;
     color: #0000FF; 
     background: #D3D3D3;
+}
+
+#data {
+    color: #000000;
+    float: left;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
 }

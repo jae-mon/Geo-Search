@@ -31,11 +31,11 @@ h1 {
     margin-bottom: 1%;
 }
 #geo-map {
-    width: 75%;
-    height: 75%;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 form {

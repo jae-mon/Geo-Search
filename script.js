@@ -51,5 +51,34 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
     'Error: Your browser doesn\'t support geolocation');
     infoWindow.open(map);
     currentWindow = infoWindow;
+
+    getNearbyCities(local);
 }  
+
+function getNearbyCities(position) {
+  let request = {
+    location: position,
+    rankBy: google.maps.places.rankBy.DISTANCE,
+    keyword: 'cities'
+  };
+
+  service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, nearbyCallback);
+}
+
+function nearbyCallback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    createMarkers(results);
+  }
+}
+
+function createMarkers(cities) {
+  cities.forEach(place => {
+    let marker = new google.maps.Marker ({
+      position: place.geometry.location,
+      map: map,
+      title: place.name
+    });
+  })
+}
    

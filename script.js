@@ -83,4 +83,3 @@ function createMarkers(places) {
   });
   map.fitBounds(bounds);
 }
-   

@@ -72,12 +72,14 @@ function nearbyCallback(results, status) {
   }
 }
 
-function createMarkers(cities) {
-  cities.forEach(place => {
+function createMarkers(places) {
+  places.forEach(place => {
     let marker = new google.maps.Marker ({
       position: place.geometry.location,
       map: map,
       title: place.name
     });
-  })
+    bounds.extend(place.geometry.location);
+  });
+  map.fitBounds(bounds);
 }

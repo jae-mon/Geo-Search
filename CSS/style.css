@@ -5,18 +5,16 @@
 
 @media only screen and (orientation:portrait){
     body {
-      float: none;
-      display: flex;
-      flex-direction: column;
+        float: none;
+        display: flex;
+        flex-direction: column;
+    }
+    #container {
+        width: 100vw;
     }
     #map-container {
         width: 100vw;
         height: 50vh;
-    }
-    #container {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
     }
   }
   

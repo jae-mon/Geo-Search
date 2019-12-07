@@ -46,17 +46,18 @@ form {
 
 input {
     font-size: 1rem;
-    border-radius: 5px;
+    font-family: Roboto;
     margin: 2px;
+    font-weight: 300;
     background: #FFFFF0;
 }
 
 #search {
-    border-radius: 50%;
     padding: 5px;
-    font-weight: 600;
-    color: #0000FF; 
-    background: #D3D3D3;
+    font-weight: 300;
+    background: #FFFFFF; 
+    text-overflow: ellipsis;
+    color: #D3D3D3;
 }
 
 #data {
@@ -65,4 +66,39 @@ input {
     text-align: left;
     margin-top: 5%;
     margin-left: 5%;
+}
+
+#panel {
+    height: 100%;
+    width: null;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all .2s ease-out;
+}
+
+.open {
+    width: 250px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    max-height: 166px;
+    display: block;
+}
+
+.place, p {
+    font-family: 'open sans',arial, sans-serif;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.details {
+    color: darkslategrey;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
 }
